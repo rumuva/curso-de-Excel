@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Curso Excel Online | Visual Basic (VBA)</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="logo-container">
+      <img src="../excel_logo.png" alt="Logo de Excel" class="logo">
+      <h1>Curso Excel Online</h1>
+    </div>
+    <nav>
+      <a href="index.html">Inicio</a>
+      <a href="beginner.html">Nivel Inicio</a>
+      <a href="intermediate.html">Nivel Intermedio</a>
+      <a href="advanced.html">Nivel Avanzado</a>
+      <a href="vba.html">Visual Basic</a>
+      <a href="index.html#contacto">Contacto</a>
+    </nav>
+    <div class="teacher-logo">
+      <img src="teacher_logo.png" alt="Logotipo del docente">
+    </div>
+  </header>
+
+  <section class="section">
+    <div class="container">
+      <h3>Programación en Visual Basic para Excel</h3>
+      <p>Visual Basic for Applications (VBA) es el lenguaje de programación incorporado en Excel y el resto de la suite Office. Aprender VBA te permitirá automatizar tareas repetitivas, extender la funcionalidad de Excel y conectar datos entre distintas aplicaciones.</p>
+      <h4>¿Por qué usar VBA?</h4>
+      <ul class="topic-list">
+        <li><strong>Automatización de tareas repetitivas:</strong> con VBA puedes ejecutar cientos de operaciones de forma inmediata, eliminando la monotonía【959340874848252†L69-L83】.</li>
+        <li><strong>Personalización de la interacción:</strong> crea cuadros de diálogo o mensajes que guíen a los usuarios según tus necesidades【959340874848252†L84-L90】.</li>
+        <li><strong>Integración entre aplicaciones:</strong> transfiere datos de Excel a Word o PowerPoint y viceversa de forma controlada【959340874848252†L128-L136】.</li>
+      </ul>
+      <p>A continuación encontrarás algunos ejemplos de macros sencillas para comenzar a programar en VBA.</p>
+
+      <h4>Ejemplo 1 – Mostrar un mensaje</h4>
+      <p>Este macro muestra un cuadro de mensaje con un saludo. Es ideal como primer ejercicio porque demuestra cómo escribir un procedimiento y ejecutar código.</p>
+      <pre><code>Sub HolaMundo()
+  MsgBox "¡Hola, mundo!"
+End Sub
+</code></pre>
+
+      <h4>Ejemplo 2 – Sumar un rango de celdas</h4>
+      <p>Calcula la suma de los valores en el rango <code>A1:A10</code> y la escribe en la celda <code>A11</code>. Puedes modificar el rango y la celda de salida según tus necesidades.</p>
+      <pre><code>Sub SumarRango()
+  Dim suma As Double
+  suma = Application.WorksheetFunction.Sum(Range("A1:A10"))
+  Range("A11").Value = suma
+End Sub
+</code></pre>
+
+      <h4>Ejemplo 3 – Insertar la fecha y hora actual</h4>
+      <p>Introduce la fecha y la hora actuales en la celda seleccionada, lo cual es útil para sellar tus registros.</p>
+      <pre><code>Sub InsertarFechaHora()
+  ActiveCell.Value = Now
+End Sub
+</code></pre>
+
+      <h4>Cómo empezar</h4>
+      <p>Para ejecutar estos ejemplos en Excel:</p>
+      <ul class="topic-list">
+        <li>Activa la pestaña <em>Desarrollador</em> en las opciones de Excel.</li>
+        <li>Haz clic en <strong>Editor de Visual Basic</strong>.</li>
+        <li>Inserta un módulo en tu libro y pega el código de ejemplo.</li>
+        <li>Ejecuta el macro presionando <kbd>F5</kbd> o asignándolo a un botón.</li>
+      </ul>
+      <p>Practica modificando los ejemplos y combinando varias instrucciones para automatizar tareas en tus proyectos.</p>
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2025 Curso Excel Online. Todos los derechos reservados.
+  </footer>
+</body>
+</html>
